@@ -26,16 +26,14 @@
         <meta name="msapplication-config" content="icons/browserconfig.xml?v=2">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <div class="container" itemscope itemtype="https://schema.org/MusicGroup">
             <header>
                 <h1 class="sr-only" itemprop="name">Bet Your Life</h1>
-                <a href="https://betyourlife.ca/" itemprop="url">
+                <a href="https://betyourlife.ca/" itemprop="url" title="Site URL">
                     <img src="img/logo.png" alt="Bet Your Life logo" itemprop="image">
                 </a>
                 <p itemprop="description"><span itemprop="genre">Punk rock</span> music from <span itemprop="location" itemscope itemtype="https://schema.org/Place"><span itemprop="name">London, Ontario, Canada</span></span>.</p>
@@ -45,32 +43,32 @@
                     <h2>Listen to us</h2>
                     <ul class="stores">
                         <li>
-                            <a href="http://music.betyourlife.ca/" target="_blank" title="Bandcamp - Link will open in a new tab">
+                            <a href="http://music.betyourlife.ca/" target="_blank" rel="noopener" title="Bandcamp - Link will open in a new tab">
                                 <i class="fa fa-bandcamp" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://open.spotify.com/artist/3ICHMLqf5KlWegn70zazOb" target="_blank" title="Spotify - Link will open in a new tab">
+                            <a href="https://open.spotify.com/artist/3ICHMLqf5KlWegn70zazOb" target="_blank" rel="noopener" title="Spotify - Link will open in a new tab">
                                 <i class="fa fa-spotify" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://play.google.com/store/music/artist?id=Atxiowzqvf3ivui4q3655hvhcny" target="_blank" title="Google Play Music - Link will open in a new tab">
+                            <a href="https://play.google.com/store/music/artist?id=Atxiowzqvf3ivui4q3655hvhcny" target="_blank" rel="noopener" title="Google Play Music - Link will open in a new tab">
                                 <i class="fa fa-google" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://itunes.apple.com/us/artist/bet-your-life/id850526234" target="_blank" title="iTunes - Link will open in a new tab">
+                            <a href="https://itunes.apple.com/us/artist/bet-your-life/id850526234" target="_blank" rel="noopener" title="iTunes - Link will open in a new tab">
                                 <i class="fa fa-apple" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/user/betyourlifemusic" target="_blank" title="YouTube - Link will open in a new tab">
+                            <a href="https://www.youtube.com/user/betyourlifemusic" target="_blank" rel="noopener" title="YouTube - Link will open in a new tab">
                                 <i class="fa fa-youtube" aria-hidden="true"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.amazon.com/s/ref=ntt_srch_drd_B00D3PMDHW?ie=UTF8&field-keywords=Bet%20Your%20Life&index=digital-music&search-type=ss" target="_blank" title="Amazon - Link will open in a new tab">
+                            <a href="https://www.amazon.com/s/ref=ntt_srch_drd_B00D3PMDHW?ie=UTF8&field-keywords=Bet%20Your%20Life&index=digital-music&search-type=ss" target="_blank" rel="noopener" title="Amazon - Link will open in a new tab">
                                 <i class="fa fa-amazon" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -93,22 +91,22 @@
                     <h2>Connect with us</h2>
                     <ul class="social-media">
                         <li>
-                            <a href="https://www.facebook.com/betyourlife" target="_blank" title="Facebook - Link will open in a new tab">
+                            <a href="https://www.facebook.com/betyourlife" target="_blank" rel="noopener" title="Facebook - Link will open in a new tab">
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/betyourlifeband" target="_blank" title="Twitter - Link will open in a new tab">
+                            <a href="https://twitter.com/betyourlifeband" target="_blank" rel="noopener" title="Twitter - Link will open in a new tab">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://instagram.com/bet_your_life" target="_blank" title="Instagram - Link will open in a new tab">
+                            <a href="https://instagram.com/bet_your_life" target="_blank" rel="noopener" title="Instagram - Link will open in a new tab">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:band@betyourlife.ca" target="_blank" title="Email us">
+                            <a href="mailto:band@betyourlife.ca" target="_blank" rel="noopener" title="Email us">
                                 <i class="fa fa-envelope"></i>
                             </a>
                         </li>
@@ -116,10 +114,19 @@
                 </section>
             </main>
             <footer>
-                <small class="copyright">Copyright &copy; 2016 Bet Your Life, but we're cool if you're cool. <a href="mailto:band@betyourlife.ca">Contact us</a>.</small>
+                <small class="copyright">Copyright &copy; 2016 Bet Your Life, but we're cool if you're cool. <a href="mailto:band@betyourlife.ca">Contact us</a>. Site by <a href="https://scottblinch.me/" target="_blank" rel="noopener" title="Link will open in new tab">Scott Blinch</a>.</small>
             </footer>
         </div>
-        <script src="//widget.songkick.com/widget.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-31200634-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
     </body>
 </html>
 

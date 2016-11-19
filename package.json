@@ -1,0 +1,32 @@
+{
+  "name": "betyourlife.ca",
+  "version": "1.0.0",
+  "description": "Website for my band.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottblinch/betyourlife.ca.git"
+  },
+  "author": "Scott Blinch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottblinch/betyourlife.ca/issues"
+  },
+  "homepage": "https://github.com/scottblinch/betyourlife.ca#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-watch": "^4.3.10"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
