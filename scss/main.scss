@@ -93,6 +93,18 @@ footer {
     border: 0;
 }
 
+.sr-only-focusable {
+    &:focus,
+    &:active {
+        position: static;
+        width: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+    }
+}
+
 .embed-responsive {
     position: relative;
     display: block;
