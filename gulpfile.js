@@ -7,12 +7,13 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     uglify = require('gulp-uglify'),
     pump = require('pump'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    cacheBust = require('gulp-cache-bust');
 
 gulp.task('default', ['browser-sync', 'minify-css', 'minify-js'], function() {
     gulp.watch('scss/**/*.scss', ['sass']);
-    gulp.watch('css/**/*.css', ['minify-css']);
-    gulp.watch('js/**/*.js', ['minify-js', browserSync.reload]);
+    gulp.watch('css/**/*.css', ['minify-css', 'cache-bust']);
+    gulp.watch('js/**/*.js', ['minify-js', 'cache-bust', browserSync.reload]);
     gulp.watch('**/*.html', browserSync.reload);
 });
 
@@ -62,4 +63,10 @@ gulp.task('minify-js', function (cb) {
         ],
         cb
     );
+});
+
+gulp.task('cache-bust', function () {
+    return gulp.src('index.html')
+        .pipe(cacheBust())
+        .pipe(gulp.dest('.'));
 });
