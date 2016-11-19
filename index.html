@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en-CA">
+<html lang="en-CA">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -77,13 +77,13 @@
                 <section>
                     <h2>Singles</h2>
                     <div class="singles">
-                        <iframe height="350" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/25552963&amp;color=897b6a&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
+                        <iframe height="350" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/25552963&amp;color=897b6a&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
                     </div>
                 </section>
                 <section>
                     <h2>Music videos</h2>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CKPbZAmzkyg?list=PLC1LFWZgkY7V1QeWGNz6Sez6ygAs-YJPQ" allowfullscreen></iframe>
+                        <iframe class="embed-responsive-item" id="youtube-playlist" data-src="https://www.youtube.com/embed/CKPbZAmzkyg?list=PLC1LFWZgkY7V1QeWGNz6Sez6ygAs-YJPQ" allowfullscreen></iframe>
                     </div>
                     <small>This is a playlist - use the controls to switch videos</small>
                 </section>
@@ -125,8 +125,7 @@
 
             ga('create', 'UA-31200634-1', 'auto');
             ga('send', 'pageview');
-
         </script>
+        <script src="js/main.js"></script>
     </body>
 </html>
-
