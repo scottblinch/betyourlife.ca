@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Bet Your Life - Punk rock - London, Ontario, Canada</title>
         <meta name="description" content="Bet Your Life is a punk rock band from London, Ontario, Canada. Listen to our music, watch our videos, and connect with us.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta property="og:title" content="Bet Your Life - Punk rock - London, Ontario, Canada">
         <meta property="og:url" content="https://betyourlife.ca/">
@@ -49,6 +49,7 @@
             <main id="main">
                 <section id="listen-to-us">
                     <h2>Listen to us</h2>
+                    <a class="sr-only sr-only-focusable" href="#listen-links-skip">Skip listen links</a>
                     <ul class="stores">
                         <li>
                             <a href="http://music.betyourlife.ca/" target="_blank" rel="noopener" title="Bandcamp - Link will open in a new tab">
@@ -81,23 +82,29 @@
                             </a>
                         </li>
                     </ul>
+                    <span id="listen-links-skip"></span>
+                </section>
+                <section id="latest-track">
+                    <h2>Latest track</h2>
+                    <a class="sr-only sr-only-focusable" href="#latest-track-skip">Skip latest track</a>
+                    <iframe data-src="https://bandcamp.com/EmbeddedPlayer/track=1715770033/size=large/bgcol=ffffff/linkcol=333333/tracklist=false/artwork=small/transparent=true/"></iframe>
+                    <span id="latest-track-skip"></span>
                 </section>
                 <section id="singles">
-                    <h2>Singles</h2>
+                    <h2>Other singles</h2>
                     <a class="sr-only sr-only-focusable" href="#singles-skip">Skip singles player</a>
                     <div class="singles">
                         <iframe height="350" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/25552963&amp;color=b71c1c&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
                     </div>
-                    <span id="singles-skip" tabindex="-1"></span>
+                    <span id="singles-skip"></span>
                 </section>
                 <section id="music-videos">
-                    <h2>Music videos</h2>
+                    <h2>Latest music video</h2>
                     <a class="sr-only sr-only-focusable" href="#music-videos-skip">Skip music videos player</a>
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe id="youtube-playlist" class="embed-responsive-item" data-src="https://www.youtube-nocookie.com/embed/7xPHDobKkDI?rel=0?ecver=1" allowfullscreen aria-describedby="youtube-playlist-description"></iframe>
+                        <iframe id="youtube-playlist" class="embed-responsive-item" data-src="https://www.youtube-nocookie.com/embed/7xPHDobKkDI?rel=0?ecver=1" allowfullscreen></iframe>
                     </div>
-                    <small id="youtube-playlist-description">This is a playlist - use the controls to switch videos</small>
-                    <span id="music-videos-skip" tabindex="-1"></span>
+                    <span id="music-videos-skip"></span>
                 </section>
                 <section id="connect-with-us">
                     <h2>Connect with us</h2>
@@ -126,7 +133,7 @@
                 </section>
             </main>
             <footer id="footer">
-                <small class="copyright">Copyright &copy; 2016 Bet Your Life, but we're cool if you're cool. <a href="mailto:band@betyourlife.ca">Contact us</a>. Site by <a href="https://scottblinch.me/" target="_blank" rel="noopener" title="Link will open in new tab">Scott Blinch</a>.</small>
+                <small class="copyright">Copyright &copy; 2017 Bet Your Life, but we're cool if you're cool. <a href="mailto:band@betyourlife.ca">Contact us</a>. Site by <a href="https://scottblinch.me/" target="_blank" rel="noopener" title="Link will open in new tab">Scott Blinch</a>.</small>
             </footer>
         </div>
         <script>
