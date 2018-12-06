@@ -1,8 +1,9 @@
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Neucha', cursive;
     font-size: 18px;
     color: #212121;
     line-height: 1.4;
+    box-sizing: border-box;
 
     @media screen and (min-width: 768px) {
         font-size: 21px;
@@ -11,12 +12,18 @@ html {
     @media screen and (min-width: 1200px) {
         font-size: 24px;
     }
+
+    *,
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
 }
 
 body {
-    padding-top: 2em;
     text-align: center;
-    background: #fff url('../img/paper.jpg') repeat;
+    background: #fff;
+    text-transform: uppercase;
 }
 
 audio,
@@ -34,7 +41,7 @@ iframe {
 }
 
 a {
-    color: #b71c1c;
+    color: #ff0d12;
 
     &:hover,
     &:focus {
@@ -61,6 +68,83 @@ footer {
     padding: 0 15px;
 }
 
+.masthead {
+    position: relative;
+    height: 90vh;
+    padding: 2em;
+}
+
+.masthead-image {
+    width: 100%;
+    height: 100%;
+    background: url('../img/a-reason-to-stay.jpg') no-repeat center center;
+    background-size: contain;
+}
+
+.masthead-band-name,
+.masthead-album-name {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.album-cta {
+    height: 10vh;
+    margin-bottom: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0d12;
+    border: 3px solid #ff0d12;
+    border-right: 0;
+    border-left: 0;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: #ff0d12;
+        background-color: #fff;
+    }
+}
+
+.masthead-band-name {
+    top: 1em;
+    right: 0;
+    left: 0;
+
+    @media screen and (min-width: 768px) {
+        top: auto;
+        bottom: 1em;
+        left: 15%;
+        right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 25%;
+    }
+}
+
+.masthead-album-name {
+    bottom: 1em;
+    right: 0;
+    left: 0;
+
+    @media screen and (min-width: 768px) {
+        left: auto;
+        right: 15%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        right: 25%;
+    }
+}
+
 .stores,
 .social-media {
     padding: 0;
@@ -79,7 +163,7 @@ footer {
 
 .copyright {
     display: inline-block;
-    font-size: .5em;
+    font-size: .7em;
 }
 
 .sr-only {
